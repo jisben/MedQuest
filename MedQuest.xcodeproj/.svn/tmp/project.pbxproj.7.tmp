@@ -1,0 +1,603 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		34045183165E8AA8000157DD /* Classification.m in Sources */ = {isa = PBXBuildFile; fileRef = 34045182165E8AA8000157DD /* Classification.m */; };
+		3434D6B4163C4CE400DD0291 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3434D6B3163C4CE400DD0291 /* UIKit.framework */; };
+		3434D6B6163C4CE400DD0291 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3434D6B5163C4CE400DD0291 /* Foundation.framework */; };
+		3434D6B8163C4CE400DD0291 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3434D6B7163C4CE400DD0291 /* CoreGraphics.framework */; };
+		3434D6BE163C4CE400DD0291 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3434D6BC163C4CE400DD0291 /* InfoPlist.strings */; };
+		3434D6C0163C4CE400DD0291 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3434D6BF163C4CE400DD0291 /* main.m */; };
+		3434D6C4163C4CE400DD0291 /* MedQuestAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3434D6C3163C4CE400DD0291 /* MedQuestAppDelegate.m */; };
+		3434D6C6163C4CE400DD0291 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3434D6C5163C4CE400DD0291 /* Default.png */; };
+		3434D6C8163C4CE400DD0291 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3434D6C7163C4CE400DD0291 /* Default@2x.png */; };
+		3434D6CA163C4CE400DD0291 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3434D6C9163C4CE400DD0291 /* Default-568h@2x.png */; };
+		3434D6D0163C4CE400DD0291 /* MedQuestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3434D6CF163C4CE400DD0291 /* MedQuestViewController.m */; };
+		3434D6D8163C4CE400DD0291 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3434D6D7163C4CE400DD0291 /* SenTestingKit.framework */; };
+		3434D6D9163C4CE400DD0291 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3434D6B3163C4CE400DD0291 /* UIKit.framework */; };
+		3434D6DA163C4CE400DD0291 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3434D6B5163C4CE400DD0291 /* Foundation.framework */; };
+		3434D6E2163C4CE400DD0291 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3434D6E0163C4CE400DD0291 /* InfoPlist.strings */; };
+		3434D6E5163C4CE400DD0291 /* MedQuestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3434D6E4163C4CE400DD0291 /* MedQuestTests.m */; };
+		34959F03165D9B45003322E0 /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = 34959F02165D9B44003322E0 /* Question.m */; };
+		34E15713163C8F6400F69463 /* CATQuestionnaire.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E15712163C8F6400F69463 /* CATQuestionnaire.m */; };
+		8706C93516606B1D0031396C /* Exacerbations.m in Sources */ = {isa = PBXBuildFile; fileRef = 8706C93416606B1D0031396C /* Exacerbations.m */; };
+		873B16C2163F72D900F6565C /* CATTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 873B16C1163F72D900F6565C /* CATTableViewController.m */; };
+		878BD1371648C2470076A227 /* SpirometryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 878BD1341648C2470076A227 /* SpirometryViewController.m */; };
+		878BD1381648C2470076A227 /* SpiroResults.m in Sources */ = {isa = PBXBuildFile; fileRef = 878BD1361648C2470076A227 /* SpiroResults.m */; };
+		878BD1481648D1B50076A227 /* GOLD.png in Resources */ = {isa = PBXBuildFile; fileRef = 878BD1471648D1B50076A227 /* GOLD.png */; };
+		879DBBD01661D1CF00106891 /* Slide074.png in Resources */ = {isa = PBXBuildFile; fileRef = 879DBBCF1661D1CF00106891 /* Slide074.png */; };
+		87A7BEC4165B49BE00FFC763 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87A7BEC2165B49BE00FFC763 /* MainStoryboard.storyboard */; };
+		87CDC7C11644D20D0089B43E /* CATDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87CDC7C01644D20D0089B43E /* CATDetailViewController.m */; };
+		87F60DE516450FD30034122A /* mMRCQuestionnaire.m in Sources */ = {isa = PBXBuildFile; fileRef = 87F60DE416450FD30034122A /* mMRCQuestionnaire.m */; };
+		87F60DE91645180E0034122A /* mMRCTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87F60DE81645180E0034122A /* mMRCTableViewController.m */; };
+		BFCCA0A71647587D00CB320A /* Questionnaire.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCCA0A61647587D00CB320A /* Questionnaire.m */; };
+		BFF29D221646FF18007EEA52 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BFF29D211646FF18007EEA52 /* libsqlite3.0.dylib */; };
+		BFF29D26164701B9007EEA52 /* MedQuestDBObject.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF29D25164701B9007EEA52 /* MedQuestDBObject.m */; };
+		BFF29D281647040D007EEA52 /* MedQuestDB.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = BFF29D271647040D007EEA52 /* MedQuestDB.sqlite */; };
+		BFF29D2B16470B9B007EEA52 /* Patient.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF29D2A16470B9B007EEA52 /* Patient.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3434D6DB163C4CE400DD0291 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3434D6A6163C4CE400DD0291 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3434D6AE163C4CE400DD0291;
+			remoteInfo = MedQuest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3404517F165E89E9000157DD /* IClassification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IClassification.h; sourceTree = "<group>"; };
+		34045181165E8AA8000157DD /* Classification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Classification.h; sourceTree = "<group>"; };
+		34045182165E8AA8000157DD /* Classification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Classification.m; sourceTree = "<group>"; };
+		3434D6AF163C4CE400DD0291 /* MedQuest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MedQuest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3434D6B3163C4CE400DD0291 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3434D6B5163C4CE400DD0291 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3434D6B7163C4CE400DD0291 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3434D6BB163C4CE400DD0291 /* MedQuest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MedQuest-Info.plist"; sourceTree = "<group>"; };
+		3434D6BD163C4CE400DD0291 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3434D6BF163C4CE400DD0291 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3434D6C1163C4CE400DD0291 /* MedQuest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MedQuest-Prefix.pch"; sourceTree = "<group>"; };
+		3434D6C2163C4CE400DD0291 /* MedQuestAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MedQuestAppDelegate.h; sourceTree = "<group>"; };
+		3434D6C3163C4CE400DD0291 /* MedQuestAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MedQuestAppDelegate.m; sourceTree = "<group>"; };
+		3434D6C5163C4CE400DD0291 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		3434D6C7163C4CE400DD0291 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		3434D6C9163C4CE400DD0291 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		3434D6CE163C4CE400DD0291 /* MedQuestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MedQuestViewController.h; sourceTree = "<group>"; };
+		3434D6CF163C4CE400DD0291 /* MedQuestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MedQuestViewController.m; sourceTree = "<group>"; };
+		3434D6D6163C4CE400DD0291 /* MedQuestTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MedQuestTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3434D6D7163C4CE400DD0291 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		3434D6DF163C4CE400DD0291 /* MedQuestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MedQuestTests-Info.plist"; sourceTree = "<group>"; };
+		3434D6E1163C4CE400DD0291 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3434D6E3163C4CE400DD0291 /* MedQuestTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MedQuestTests.h; sourceTree = "<group>"; };
+		3434D6E4163C4CE400DD0291 /* MedQuestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MedQuestTests.m; sourceTree = "<group>"; };
+		34959EFB165D900A003322E0 /* IQuestion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IQuestion.h; sourceTree = "<group>"; };
+		34959F01165D9B44003322E0 /* Question.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question.h; sourceTree = "<group>"; };
+		34959F02165D9B44003322E0 /* Question.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question.m; sourceTree = "<group>"; };
+		34981D381659AB14002E7F7A /* IQuestionnaire.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IQuestionnaire.h; sourceTree = "<group>"; };
+		34E15711163C8F6400F69463 /* CATQuestionnaire.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CATQuestionnaire.h; sourceTree = "<group>"; };
+		34E15712163C8F6400F69463 /* CATQuestionnaire.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CATQuestionnaire.m; sourceTree = "<group>"; };
+		8706C93316606B1D0031396C /* Exacerbations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Exacerbations.h; sourceTree = "<group>"; };
+		8706C93416606B1D0031396C /* Exacerbations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Exacerbations.m; sourceTree = "<group>"; };
+		873B16C0163F72D800F6565C /* CATTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CATTableViewController.h; sourceTree = "<group>"; };
+		873B16C1163F72D900F6565C /* CATTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CATTableViewController.m; sourceTree = "<group>"; };
+		878BD1331648C2470076A227 /* SpirometryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpirometryViewController.h; sourceTree = "<group>"; };
+		878BD1341648C2470076A227 /* SpirometryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpirometryViewController.m; sourceTree = "<group>"; };
+		878BD1351648C2470076A227 /* SpiroResults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpiroResults.h; sourceTree = "<group>"; };
+		878BD1361648C2470076A227 /* SpiroResults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpiroResults.m; sourceTree = "<group>"; };
+		878BD1471648D1B50076A227 /* GOLD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GOLD.png; sourceTree = "<group>"; };
+		879DBBCF1661D1CF00106891 /* Slide074.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Slide074.png; sourceTree = "<group>"; };
+		87A7BEC3165B49BE00FFC763 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = MedQuest/en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		87CDC7BF1644D20D0089B43E /* CATDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CATDetailViewController.h; sourceTree = "<group>"; };
+		87CDC7C01644D20D0089B43E /* CATDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CATDetailViewController.m; sourceTree = "<group>"; };
+		87F60DE316450FD20034122A /* mMRCQuestionnaire.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mMRCQuestionnaire.h; sourceTree = "<group>"; };
+		87F60DE416450FD30034122A /* mMRCQuestionnaire.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mMRCQuestionnaire.m; sourceTree = "<group>"; };
+		87F60DE71645180D0034122A /* mMRCTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mMRCTableViewController.h; sourceTree = "<group>"; };
+		87F60DE81645180E0034122A /* mMRCTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mMRCTableViewController.m; sourceTree = "<group>"; };
+		BFC41338164A0DCC003C0CD1 /* IQuestionnaire.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IQuestionnaire.h; sourceTree = "<group>"; };
+		BFCCA0A51647585E00CB320A /* Questionnaire.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Questionnaire.h; sourceTree = "<group>"; };
+		BFCCA0A61647587D00CB320A /* Questionnaire.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Questionnaire.m; sourceTree = "<group>"; };
+		BFF29D211646FF18007EEA52 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		BFF29D24164701B0007EEA52 /* MedQuestDBObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MedQuestDBObject.h; sourceTree = "<group>"; };
+		BFF29D25164701B9007EEA52 /* MedQuestDBObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MedQuestDBObject.m; sourceTree = "<group>"; };
+		BFF29D271647040D007EEA52 /* MedQuestDB.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = MedQuestDB.sqlite; sourceTree = "<group>"; };
+		BFF29D2916470B9B007EEA52 /* Patient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Patient.h; sourceTree = "<group>"; };
+		BFF29D2A16470B9B007EEA52 /* Patient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Patient.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3434D6AC163C4CE400DD0291 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFF29D221646FF18007EEA52 /* libsqlite3.0.dylib in Frameworks */,
+				3434D6B4163C4CE400DD0291 /* UIKit.framework in Frameworks */,
+				3434D6B6163C4CE400DD0291 /* Foundation.framework in Frameworks */,
+				3434D6B8163C4CE400DD0291 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3434D6D2163C4CE400DD0291 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3434D6D8163C4CE400DD0291 /* SenTestingKit.framework in Frameworks */,
+				3434D6D9163C4CE400DD0291 /* UIKit.framework in Frameworks */,
+				3434D6DA163C4CE400DD0291 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		34045184165E8D8A000157DD /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				3404517F165E89E9000157DD /* IClassification.h */,
+				34959EFB165D900A003322E0 /* IQuestion.h */,
+				34981D381659AB14002E7F7A /* IQuestionnaire.h */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		3434D6A4163C4CE400DD0291 = {
+			isa = PBXGroup;
+			children = (
+				87A7BEC2165B49BE00FFC763 /* MainStoryboard.storyboard */,
+				879DBBCF1661D1CF00106891 /* Slide074.png */,
+				878BD1471648D1B50076A227 /* GOLD.png */,
+				3434D6B9163C4CE400DD0291 /* MedQuest */,
+				3434D6DD163C4CE400DD0291 /* MedQuestTests */,
+				3434D6B2163C4CE400DD0291 /* Frameworks */,
+				3434D6B0163C4CE400DD0291 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3434D6B0163C4CE400DD0291 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3434D6AF163C4CE400DD0291 /* MedQuest.app */,
+				3434D6D6163C4CE400DD0291 /* MedQuestTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3434D6B2163C4CE400DD0291 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BFF29D211646FF18007EEA52 /* libsqlite3.0.dylib */,
+				3434D6B3163C4CE400DD0291 /* UIKit.framework */,
+				3434D6B5163C4CE400DD0291 /* Foundation.framework */,
+				3434D6B7163C4CE400DD0291 /* CoreGraphics.framework */,
+				3434D6D7163C4CE400DD0291 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3434D6B9163C4CE400DD0291 /* MedQuest */ = {
+			isa = PBXGroup;
+			children = (
+				BF5BDBDA16489AB1005D288F /* Interface */,
+				348388A81646F37500785B8E /* Model */,
+				348388A61646F35D00785B8E /* ViewControllers */,
+				3434D6C2163C4CE400DD0291 /* MedQuestAppDelegate.h */,
+				3434D6C3163C4CE400DD0291 /* MedQuestAppDelegate.m */,
+				3434D6BA163C4CE400DD0291 /* Supporting Files */,
+			);
+			path = MedQuest;
+			sourceTree = "<group>";
+		};
+		3434D6BA163C4CE400DD0291 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BFF29D271647040D007EEA52 /* MedQuestDB.sqlite */,
+				3434D6BB163C4CE400DD0291 /* MedQuest-Info.plist */,
+				3434D6BC163C4CE400DD0291 /* InfoPlist.strings */,
+				3434D6BF163C4CE400DD0291 /* main.m */,
+				3434D6C1163C4CE400DD0291 /* MedQuest-Prefix.pch */,
+				3434D6C5163C4CE400DD0291 /* Default.png */,
+				3434D6C7163C4CE400DD0291 /* Default@2x.png */,
+				3434D6C9163C4CE400DD0291 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3434D6DD163C4CE400DD0291 /* MedQuestTests */ = {
+			isa = PBXGroup;
+			children = (
+				3434D6E3163C4CE400DD0291 /* MedQuestTests.h */,
+				3434D6E4163C4CE400DD0291 /* MedQuestTests.m */,
+				3434D6DE163C4CE400DD0291 /* Supporting Files */,
+			);
+			path = MedQuestTests;
+			sourceTree = "<group>";
+		};
+		3434D6DE163C4CE400DD0291 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3434D6DF163C4CE400DD0291 /* MedQuestTests-Info.plist */,
+				3434D6E0163C4CE400DD0291 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		348388A61646F35D00785B8E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				873B16C0163F72D800F6565C /* CATTableViewController.h */,
+				873B16C1163F72D900F6565C /* CATTableViewController.m */,
+				87F60DE71645180D0034122A /* mMRCTableViewController.h */,
+				87F60DE81645180E0034122A /* mMRCTableViewController.m */,
+				3434D6CE163C4CE400DD0291 /* MedQuestViewController.h */,
+				3434D6CF163C4CE400DD0291 /* MedQuestViewController.m */,
+				87CDC7BF1644D20D0089B43E /* CATDetailViewController.h */,
+				87CDC7C01644D20D0089B43E /* CATDetailViewController.m */,
+				878BD1331648C2470076A227 /* SpirometryViewController.h */,
+				878BD1341648C2470076A227 /* SpirometryViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		348388A81646F37500785B8E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				34045184165E8D8A000157DD /* Protocols */,
+				BFCCA0A51647585E00CB320A /* Questionnaire.h */,
+				BFCCA0A61647587D00CB320A /* Questionnaire.m */,
+				BFF29D24164701B0007EEA52 /* MedQuestDBObject.h */,
+				BFF29D25164701B9007EEA52 /* MedQuestDBObject.m */,
+				87F60DE316450FD20034122A /* mMRCQuestionnaire.h */,
+				87F60DE416450FD30034122A /* mMRCQuestionnaire.m */,
+				34E15711163C8F6400F69463 /* CATQuestionnaire.h */,
+				34E15712163C8F6400F69463 /* CATQuestionnaire.m */,
+				BFF29D2916470B9B007EEA52 /* Patient.h */,
+				BFF29D2A16470B9B007EEA52 /* Patient.m */,
+				878BD1351648C2470076A227 /* SpiroResults.h */,
+				878BD1361648C2470076A227 /* SpiroResults.m */,
+				8706C93316606B1D0031396C /* Exacerbations.h */,
+				8706C93416606B1D0031396C /* Exacerbations.m */,
+				34959F01165D9B44003322E0 /* Question.h */,
+				34959F02165D9B44003322E0 /* Question.m */,
+				34045181165E8AA8000157DD /* Classification.h */,
+				34045182165E8AA8000157DD /* Classification.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		BF5BDBDA16489AB1005D288F /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				BFC41338164A0DCC003C0CD1 /* IQuestionnaire.h */,
+			);
+			name = Interface;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3434D6AE163C4CE400DD0291 /* MedQuest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3434D6E8163C4CE400DD0291 /* Build configuration list for PBXNativeTarget "MedQuest" */;
+			buildPhases = (
+				3434D6AB163C4CE400DD0291 /* Sources */,
+				3434D6AC163C4CE400DD0291 /* Frameworks */,
+				3434D6AD163C4CE400DD0291 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MedQuest;
+			productName = MedQuest;
+			productReference = 3434D6AF163C4CE400DD0291 /* MedQuest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3434D6D5163C4CE400DD0291 /* MedQuestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3434D6EB163C4CE400DD0291 /* Build configuration list for PBXNativeTarget "MedQuestTests" */;
+			buildPhases = (
+				3434D6D1163C4CE400DD0291 /* Sources */,
+				3434D6D2163C4CE400DD0291 /* Frameworks */,
+				3434D6D3163C4CE400DD0291 /* Resources */,
+				3434D6D4163C4CE400DD0291 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3434D6DC163C4CE400DD0291 /* PBXTargetDependency */,
+			);
+			name = MedQuestTests;
+			productName = MedQuestTests;
+			productReference = 3434D6D6163C4CE400DD0291 /* MedQuestTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3434D6A6163C4CE400DD0291 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MedQuest;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = TeamIota;
+			};
+			buildConfigurationList = 3434D6A9163C4CE400DD0291 /* Build configuration list for PBXProject "MedQuest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3434D6A4163C4CE400DD0291;
+			productRefGroup = 3434D6B0163C4CE400DD0291 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3434D6AE163C4CE400DD0291 /* MedQuest */,
+				3434D6D5163C4CE400DD0291 /* MedQuestTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3434D6AD163C4CE400DD0291 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3434D6BE163C4CE400DD0291 /* InfoPlist.strings in Resources */,
+				3434D6C6163C4CE400DD0291 /* Default.png in Resources */,
+				3434D6C8163C4CE400DD0291 /* Default@2x.png in Resources */,
+				3434D6CA163C4CE400DD0291 /* Default-568h@2x.png in Resources */,
+				BFF29D281647040D007EEA52 /* MedQuestDB.sqlite in Resources */,
+				878BD1481648D1B50076A227 /* GOLD.png in Resources */,
+				87A7BEC4165B49BE00FFC763 /* MainStoryboard.storyboard in Resources */,
+				879DBBD01661D1CF00106891 /* Slide074.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3434D6D3163C4CE400DD0291 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3434D6E2163C4CE400DD0291 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3434D6D4163C4CE400DD0291 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3434D6AB163C4CE400DD0291 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3434D6C0163C4CE400DD0291 /* main.m in Sources */,
+				3434D6C4163C4CE400DD0291 /* MedQuestAppDelegate.m in Sources */,
+				3434D6D0163C4CE400DD0291 /* MedQuestViewController.m in Sources */,
+				34E15713163C8F6400F69463 /* CATQuestionnaire.m in Sources */,
+				873B16C2163F72D900F6565C /* CATTableViewController.m in Sources */,
+				87CDC7C11644D20D0089B43E /* CATDetailViewController.m in Sources */,
+				87F60DE516450FD30034122A /* mMRCQuestionnaire.m in Sources */,
+				87F60DE91645180E0034122A /* mMRCTableViewController.m in Sources */,
+				BFF29D26164701B9007EEA52 /* MedQuestDBObject.m in Sources */,
+				BFF29D2B16470B9B007EEA52 /* Patient.m in Sources */,
+				BFCCA0A71647587D00CB320A /* Questionnaire.m in Sources */,
+				878BD1371648C2470076A227 /* SpirometryViewController.m in Sources */,
+				878BD1381648C2470076A227 /* SpiroResults.m in Sources */,
+				34959F03165D9B45003322E0 /* Question.m in Sources */,
+				34045183165E8AA8000157DD /* Classification.m in Sources */,
+				8706C93516606B1D0031396C /* Exacerbations.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3434D6D1163C4CE400DD0291 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3434D6E5163C4CE400DD0291 /* MedQuestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3434D6DC163C4CE400DD0291 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3434D6AE163C4CE400DD0291 /* MedQuest */;
+			targetProxy = 3434D6DB163C4CE400DD0291 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3434D6BC163C4CE400DD0291 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3434D6BD163C4CE400DD0291 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3434D6E0163C4CE400DD0291 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3434D6E1163C4CE400DD0291 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		87A7BEC2165B49BE00FFC763 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				87A7BEC3165B49BE00FFC763 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3434D6E6163C4CE400DD0291 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3434D6E7163C4CE400DD0291 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3434D6E9163C4CE400DD0291 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MedQuest/MedQuest-Prefix.pch";
+				INFOPLIST_FILE = "MedQuest/MedQuest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3434D6EA163C4CE400DD0291 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MedQuest/MedQuest-Prefix.pch";
+				INFOPLIST_FILE = "MedQuest/MedQuest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		3434D6EC163C4CE400DD0291 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MedQuest.app/MedQuest";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MedQuest/MedQuest-Prefix.pch";
+				INFOPLIST_FILE = "MedQuestTests/MedQuestTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		3434D6ED163C4CE400DD0291 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MedQuest.app/MedQuest";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MedQuest/MedQuest-Prefix.pch";
+				INFOPLIST_FILE = "MedQuestTests/MedQuestTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3434D6A9163C4CE400DD0291 /* Build configuration list for PBXProject "MedQuest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3434D6E6163C4CE400DD0291 /* Debug */,
+				3434D6E7163C4CE400DD0291 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3434D6E8163C4CE400DD0291 /* Build configuration list for PBXNativeTarget "MedQuest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3434D6E9163C4CE400DD0291 /* Debug */,
+				3434D6EA163C4CE400DD0291 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3434D6EB163C4CE400DD0291 /* Build configuration list for PBXNativeTarget "MedQuestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3434D6EC163C4CE400DD0291 /* Debug */,
+				3434D6ED163C4CE400DD0291 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3434D6A6163C4CE400DD0291 /* Project object */;
+}

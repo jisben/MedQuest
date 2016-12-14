@@ -1,0 +1,23 @@
+//
+//  MedQuestAppDelegate.h
+//  MedQuest
+//
+//  Created by Justin Grant on 10/27/12.
+//  Copyright (c) 2012 TeamIota. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+#import "IQuestionnaire.h"
+#import "DBObject.h"
+
+@interface MedQuestAppDelegate : UIResponder <UIApplicationDelegate>
+
+@property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) id<IQuestionnaire> CATQuestionnaireInfo;
+<<<<<<< .mine
+@property (strong, nonatomic) DBObject *dbObj;
+
+=======
+@property (strong, nonatomic) id<IQuestionnaire> mMRCQuestionnaireInfo;
+>>>>>>> .r13
+@end

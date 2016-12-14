@@ -1,0 +1,64 @@
+//
+//  MedQuestTests.m
+//  MedQuestTests
+//
+//  Created by Justin Grant on 10/27/12.
+//  Copyright (c) 2012 TeamIota. All rights reserved.
+//
+
+#import "MedQuestTests.h"
+#import "CATQuestionnaire.h"
+
+@implementation MedQuestTests
+
+- (void)setUp
+{
+    [super setUp];
+    
+    // Set-up code here.
+}
+
+- (void)tearDown
+{
+    // Tear-down code here.
+    
+    [super tearDown];
+}
+
+- (void)testCatQuestionnaire
+{
+    NSString* inputQuestions[] = { @"Question1", @"Question2", @"Question3" };
+    
+    id<IQuestionnaire> q = [[CATQuestionnaire alloc] init];
+    STAssertNotNil(q, @"Allocation Test.");
+    
+    [q addQuestion:inputQuestions[0]];
+    [q addQuestion:inputQuestions[1]];
+    [q addQuestion:inputQuestions[2]];
+    
+    NSArray* questions = [q getQuestions];
+    STAssertNotNil(questions, @"Question return");
+    
+    for(int i = 0; i < questions.count; i++)
+    {
+        STAssertEquals(questions[i], inputQuestions[i], @"Testing input questions are equal: %d", i);
+    }
+    
+    NSString* badQuestion = @"Bad String";
+    STAssertEquals([q setAnswer:1 forQuestion:badQuestion], NO, @"Testing bad question");
+
+    for(int i = 0; i < questions.count; i++)
+    {
+        STAssertEquals([q setAnswer:i forQuestion:questions[i]], YES, @"Testing good question %d", i);
+    }
+
+
+    STAssertEquals([q setAnswer:-1 forQuestion:questions[0]], NO, @"Testing bad min input");
+    STAssertEquals([q setAnswer:3 forQuestion:questions[0]], YES, @"Testing minimum input");
+    STAssertEquals([q setAnswer:5 forQuestion:questions[0]], YES, @"Testing maximum output");
+    STAssertEquals([q setAnswer:6 forQuestion:questions[0]], NO, @"Testing bad max output");
+    
+    STAssertEquals([q getAnswer:inputQuestions[0]].intValue, 5,@"Testing answer return");
+}
+
+@end

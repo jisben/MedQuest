@@ -1,0 +1,88 @@
+//
+//  Question.m
+//  MedQuest
+//
+//  Created by Justin Grant on 10/27/12.
+//  Copyright (c) 2012 TeamIota. All rights reserved.
+//
+
+#import "CATQuestionnaire.h"
+
+@implementation CATQuestionnaire
+
+@synthesize MaxResponse, MinResponse;
+
+-(id) init
+{
+    self = [super init];
+    if(self)
+    {
+        cQuestions = [[NSMutableArray alloc] init];
+        cAnswers = [[NSMutableDictionary alloc] init];
+        MaxResponse = 5;
+        MinResponse = 0;
+    }
+    return self;
+}
+
+
+-(void) addQuestion:(NSString*) question
+{
+    if(question != nil)
+    {
+        [cQuestions addObject:question];
+    }
+}
+
+-(NSArray*) getQuestions
+{
+    return (NSArray*) cQuestions; // convert to NSArray* so that it can't be modified
+}
+
+-(BOOL) setAnswer:(NSInteger) answer forQuestion:(NSString*) question
+{
+    BOOL questionFound = NO;
+
+    if(answer >= MinResponse && answer <= MaxResponse)
+    {
+        for(int i = 0; i < cQuestions.count; i++)
+        {
+            if(cQuestions[i] == question)
+            {   // this is a pointer comparison, not a string equality check!
+                [cAnswers setObject:[NSNumber numberWithInt:answer] forKey: question];
+                questionFound = YES;
+            }
+        }
+    }
+    
+    return questionFound;
+}
+
+-(NSNumber*) getAnswer:(NSString*) question
+{
+    return [cAnswers objectForKey:question];
+}
+
+-(NSNumber*) getScore
+{
+    NSInteger score = 0;
+    
+    for(NSString* question in cQuestions)
+    {
+        NSNumber* ans = [self getAnswer:question];
+        if(ans == nil)
+        {
+            return nil;
+        }
+        else
+         
+        {
+            score += ans.intValue;
+        }
+    }
+    
+    return [[NSNumber alloc] initWithInt:score];
+ 
+}
+
+@end

@@ -1,0 +1,23 @@
+//
+//  Questionnaire.h
+//  MedQuest
+//
+//  Created by Justin Grant on 10/27/12.
+//  Copyright (c) 2012 TeamIota. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+#import "IQuestionnaire.h"
+
+@interface Questionnaire : NSObject <IQuestionnaire>
+{
+    NSString* name;
+    NSMutableArray* questions;
+    NSDate* dateAnswered;
+}
+
+@property (nonatomic, assign) NSInteger MinResponse;
+@property (nonatomic, assign) NSInteger MaxResponse;
+
+
+@end

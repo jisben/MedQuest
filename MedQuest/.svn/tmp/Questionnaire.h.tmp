@@ -1,0 +1,47 @@
+//
+//  Questionnaire.h
+//  MedQuest
+//
+//  Created by Justin Grant on 10/27/12.
+//  Copyright (c) 2012 TeamIota. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+@interface Questionnaire : NSObject {
+    NSString* name;
+    NSMutableArray* questions;
+    NSMutableDictionary* answers;
+    NSDate* dateAnswered;
+}
+
+@property (nonatomic, assign) NSInteger MinResponse;
+@property (nonatomic, assign) NSInteger MaxResponse;
+
+-(void) setName:(NSString *) qName;
+
+-(NSString *) getName;
+
+-(NSString *) getDateAnsweredAsString;
+
+-(void) addQuestion:(NSString*) question;
+
+-(NSArray*) getQuestions;
+
+-(void) clearAnswers;
+
+/*
+ This function expects the question variable to be a pointer match to one of the NSString objects inserted
+ with the addQuestion function.
+ Returns YES if the answer was inserted, NO otherwise.
+ */
+-(BOOL) setAnswer:(NSInteger) answer forQuestion:(NSString*) question;
+/*
+ This function expects the question variable to be a pointer match to one of the NSString objects inserted
+ with the addQuestion function.  
+ Returns the answer that was inserted, nil if no answer has been provided
+ */
+-(NSNumber*) getAnswer:(NSString*) question;
+
+
+@end

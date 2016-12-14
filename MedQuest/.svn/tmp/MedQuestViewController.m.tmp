@@ -1,0 +1,55 @@
+//
+//  MedQuestViewController.m
+//  MedQuest
+//
+//  Created by Justin Grant on 10/27/12.
+//  Copyright (c) 2012 TeamIota. All rights reserved.
+//
+
+#import "MedQuestViewController.h"
+
+@interface MedQuestViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *CATScore;
+@property (weak, nonatomic) IBOutlet UILabel *mMRCScore;
+
+@end
+
+@implementation MedQuestViewController
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+	// Do any additional setup after loading the view, typically from a nib.
+
+    
+}
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    MedQuestAppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
+    
+    // update text fields with scores
+    NSNumber* CATscore = [appDelegate.CATQuestionnaireInfo getScore];
+    
+    if(CATscore != nil)
+        self.CATScore.text = [CATscore stringValue];
+    else
+        self.CATScore.text = @"-";
+
+    NSNumber* mMRCscore = [appDelegate.mMRCQuestionnaireInfo getScore];
+    
+    if(mMRCscore != nil)
+        self.mMRCScore.text = [mMRCscore stringValue];
+    else
+        self.mMRCScore.text = @"-";
+
+}
+
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+@end

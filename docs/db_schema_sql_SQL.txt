@@ -1,0 +1,111 @@
+
+
+
+
+-- ---
+-- Globals
+-- ---
+
+-- SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+-- SET FOREIGN_KEY_CHECKS=0;
+
+-- ---
+-- Table 'Patients'
+-- 
+-- ---
+
+DROP TABLE IF EXISTS `Patients`;
+
+CREATE TABLE `Patients` (
+  `PatientID` INTEGER PRIMARY KEY AUTOINCREMENT,
+  `PatientName` TEXT,
+  `DOB` DATE,
+  `EmailAddress` TEXT DEFAULT NULL,
+  `PhysicalAddress` TEXT DEFAULT NULL,
+  `PhoneNumber` TEXT DEFAULT NULL
+);
+
+-- ---
+-- Table 'Classifications'
+-- 
+-- ---
+
+DROP TABLE IF EXISTS `Classifications`;
+		
+CREATE TABLE `Classifications` (
+  `ClassificationID` INTEGER PRIMARY KEY AUTOINCREMENT,
+  `PatientID` INTEGER,
+  `ClassificationResult` TEXT,
+  `ClassificationDate` DATE,
+  `Notes` TEXT DEFAULT NULL,
+  FOREIGN KEY(PatientID) REFERENCES Patients(PatientID)
+);
+
+-- ---
+-- Table 'Answered Questionnaires'
+-- 
+-- ---
+
+DROP TABLE IF EXISTS `AnsweredQuestionnaires`;
+		
+CREATE TABLE `AnsweredQuestionnaires` (
+  `QuestionnaireID` INTEGER PRIMARY KEY AUTOINCREMENT,
+  `PatientID` INTEGER,
+  `ClassificationID` INTEGER DEFAULT NULL,
+  `QuestionnaireName` TEXT,
+  `DateAnswered` DATE,
+  FOREIGN KEY(PatientID) REFERENCES Patient(PatientID)
+  FOREIGN KEY(ClassificationID) REFERENCES Classifications(ClassificationID)
+);
+
+-- ---
+-- Table 'Test Results'
+-- 
+-- ---
+
+DROP TABLE IF EXISTS `TestResults`;
+		
+CREATE TABLE `TestResults` (
+  `TestID` INTEGER PRIMARY KEY AUTOINCREMENT,
+  `PatientID` INTEGER,
+  `ClassificationID` INTEGER DEFAULT NULL,
+  `TestName` TEXT,
+  `TestScore` TEXT,
+  `TestDate` DATE,
+  `Notes` TEXT DEFAULT NULL,
+  FOREIGN KEY(PatientID) REFERENCES Patients(PatientID)
+  FOREIGN KEY(ClassificationID) REFERENCES Classifications(ClassificationID)
+);
+
+-- ---
+-- Table 'AnsweredQuestions'
+-- 
+-- ---
+
+DROP TABLE IF EXISTS `AnsweredQuestions`;
+		
+CREATE TABLE `AnsweredQuestions` (
+  `QuestionID` INTEGER PRIMARY KEY AUTOINCREMENT,
+  `QuestionnaireID` INTEGER,
+  `QuestionNumber` INTEGER,
+  `Question` TEXT,
+  `Answer` TEXT DEFAULT NULL,
+  FOREIGN KEY(QuestionnaireID) REFERENCES AnsweredQuestionnaires(QuestionnaireID)
+);
+
+
+-- ---
+-- Test Data
+-- ---
+
+-- INSERT INTO `Patients` (`PatientID`,`PatientName`,`DOB`,`EmailAddress`,`PhysicalAddress`,`PhoneNumber`) VALUES
+-- ('','','','','','');
+-- INSERT INTO `Classifications` (`ClassificationID`,`PatientID`,`ClassificationResult`,`ClassificationDate`,`Notes`) VALUES
+-- ('','','','','');
+-- INSERT INTO `AnsweredQuestionnaires` (`QuestionnaireID`,`PatientID`,`ClassificationID`,`QuestionnaireName`,`DateAnswered`) VALUES
+-- ('','','','','');
+-- INSERT INTO `TestResults` (`TestID`,`PatientID`,`ClassificationID`,`TestName`,`TestScore`,`TestDate`,`Notes`) VALUES
+-- ('','','','','','','');
+-- INSERT INTO `AnsweredQuestions` (`QuestionID`,`QuestionnaireID`,`QuestionNumber`,`Question`,`Answer`) VALUES
+-- ('','','','','');
+
